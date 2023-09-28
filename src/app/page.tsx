@@ -1,6 +1,7 @@
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import Link from 'next/link'
 import { ArrowRight } from "lucide-react"
+import { buttonVariants } from '@/components/ui/button'
 
 export default function Home() {
   return (
@@ -14,7 +15,9 @@ export default function Home() {
       <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg">
         Brilla allows you to have conversations with any PDF document. Simply upload your file and start asking questions right away.
       </p>
-      <Link href="/dashboard" target="_blank">
+      <Link className= {buttonVariants({
+        size: 'lg', className: 'mt-5'
+      })}  href="/dashboard" target="_blank">
         Get started <ArrowRight className='ml-2 h-5 w-5'/>
       </Link>
     </MaxWidthWrapper>
