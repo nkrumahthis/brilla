@@ -1,6 +1,6 @@
 # Brilla
 
-Ask your document questions. Build with nextjs.
+Ask your document questions. Built with nextjs.
 
 ![image](public/screenshot1.png)
 
